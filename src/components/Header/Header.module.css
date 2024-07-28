@@ -1,0 +1,100 @@
+/* AppHeader */
+
+.header {
+    height: 55px;
+    padding-left: 14px;
+    padding-right: 16px;
+    background-color: #0067A3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32.8px;
+    margin-top: 11px;
+    margin-bottom: 18px;
+}
+
+/* User */
+
+.notClicked,
+.clicked {
+    display: flex;
+    margin-top: 7.8px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.userImage {
+    width: 38.4px;
+    height: 38.4px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrow {
+    margin-top: 8px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* transition: transform .3s ease-in-out; */
+}
+
+.arrowUp {
+    transform: rotate(0.5turn);
+}
+
+.dropDown {
+    margin-top: 4px;
+    position: absolute;
+    background-color: #fff;
+    width: 134px;
+    height: 60px;
+    padding-top: 8px;
+    padding-left: 7px;
+    border-radius: 5px;
+    top: 51px;
+    right: 9px;
+}
+
+.romb {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: -5px;
+    right: 44px;
+}
+
+.link {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.4px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.link:hover {
+    color: #0067A3;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        justify-content: end;
+        background-color: #0079BF;
+    }
+
+    .heading {
+        display: none;
+    }
+}
